@@ -1,0 +1,110 @@
+3.Find all the company drives and students who are appeared for the placement.
+
+querry:-
+
+db.company_drives.find().toArray;
+
+output:-
+
+[
+  {
+    _id: ObjectId('6656048297e34b4db6f6e514'),
+    date: 2020-10-03T00:00:00.000Z,
+    companyname: 'winterfell',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426521'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e515'),
+    date: 2020-10-04T00:00:00.000Z,
+    companyname: 'vale_of_arryn',
+    selectedstatus: 'inpipeline',
+    userid: '6654c0b6fce2851d43426521'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e516'),
+    date: 2020-10-03T00:00:00.000Z,
+    companyname: 'winterfell',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426522'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e517'),
+    date: 2020-10-04T00:00:00.000Z,
+    companyname: 'vale_of_arryn',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426522'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e518'),
+    date: 2020-10-10T00:00:00.000Z,
+    companyname: 'river_land',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426523'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e519'),
+    date: 2020-10-11T00:00:00.000Z,
+    companyname: 'kings_landing',
+    selectedstatus: 'rejected',
+    userid: '6654c0b6fce2851d43426523'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51a'),
+    date: 2020-10-17T00:00:00.000Z,
+    companyname: 'winterfell',
+    selectedstatus: 'rejected',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51b'),
+    date: 2020-10-24T00:00:00.000Z,
+    companyname: 'the_wall',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51c'),
+    date: 2020-10-31T00:00:00.000Z,
+    companyname: 'braavos',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51d'),
+    date: 2020-10-18T00:00:00.000Z,
+    companyname: 'winterfell',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51e'),
+    date: 2020-10-25T00:00:00.000Z,
+    companyname: 'the_wall',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51f'),
+    date: 2020-10-10T00:00:00.000Z,
+    companyname: 'river_land',
+    selectedstatus: 'rejected',
+    userid: '6654c0b6fce2851d43426526'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e520'),
+    date: 2020-10-11T00:00:00.000Z,
+    companyname: 'kings_landing',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426526'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e521'),
+    date: 2020-10-31T00:00:00.000Z,
+    companyname: 'braavos',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426527'
+  }
+]
+
+

@@ -1,0 +1,204 @@
+users
+
+db.users.insertMany([
+{student_name:'nedstark',course:'fsd'},
+{student_name:'catelynstark',course:'fsd'},
+{student_name:'robstark',course:'fsd'},
+{student_name:'jhonsnow',course:'fsd'},
+{student_name:'brandonstark',course:'fsd'},
+{student_name:'sansastark',course:'fsd'},
+{student_name:'aryastark',course:'fsd'},
+{student_name:'rickonstark',course:'fsd'}
+]);
+
+codekata
+
+db.codekata.insertMany([
+{student_name:'nedstark',problesolved:'57',userid:'6654c0b6fce2851d43426521'},
+{student_name:'catelynstark',problesolved:'53',userid:'6654c0b6fce2851d43426522'},
+{student_name:'robstark',problesolved:'45',userid:'6654c0b6fce2851d43426523'},
+{student_name:'jhonsnow',problesolved:'54',userid:'6654c0b6fce2851d43426524'},
+{student_name:'brandonstark',problesolved:'50',userid:'6654c0b6fce2851d43426525'},
+{student_name:'sansastark',problesolved:'34',userid:'6654c0b6fce2851d43426526'},
+{student_name:'aryastark',problesolved:'65',userid:'6654c0b6fce2851d43426527'},
+{student_name:'rickonstark',problesolved:'33',userid:'6654c0b6fce2851d43426528'}
+]);
+
+attendance
+
+db.attendance.insertMany([
+  {date: ISODate("2020-10-03"),attendance:'a',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-04"),attendance:'a',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-10"),attendance:'p',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-11"),attendance:'p',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-17"),attendance:'p',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-18"),attendance:'p',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-24"),attendance:'p',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-25"),attendance:'p',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-31"),attendance:'p',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-03"),attendance:'a',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-04"),attendance:'a',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-10"),attendance:'p',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-11"),attendance:'p',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-17"),attendance:'p',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-18"),attendance:'p',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-24"),attendance:'p',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-25"),attendance:'p',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-31"),attendance:'p',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-03"),attendance:'p',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-04"),attendance:'p',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-10"),attendance:'a',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-11"),attendance:'a',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-17"),attendance:'p',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-18"),attendance:'p',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-24"),attendance:'p',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-25"),attendance:'p',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-31"),attendance:'p',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-03"),attendance:'p',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-04"),attendance:'p',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-10"),attendance:'p',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-11"),attendance:'p',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-17"),attendance:'a',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-18"),attendance:'p',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-24"),attendance:'a',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-25"),attendance:'p',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-31"),attendance:'a',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-03"),attendance:'p',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-04"),attendance:'p',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-10"),attendance:'p',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-11"),attendance:'p',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-17"),attendance:'p',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-18"),attendance:'a',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-24"),attendance:'p',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-25"),attendance:'a',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-31"),attendance:'p',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-03"),attendance:'p',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-04"),attendance:'p',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-10"),attendance:'a',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-11"),attendance:'a',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-17"),attendance:'p',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-18"),attendance:'p',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-24"),attendance:'p',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-25"),attendance:'p',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-31"),attendance:'p',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-03"),attendance:'p',userid:'6654c0b6fce2851d43426527'},
+  {date: ISODate("2020-10-04"),attendance:'p',userid:'6654c0b6fce2851d43426527'},
+  {date: ISODate("2020-10-10"),attendance:'p',userid:'6654c0b6fce2851d43426527'},
+  {date: ISODate("2020-10-11"),attendance:'p',userid:'6654c0b6fce2851d43426527'},
+  {date: ISODate("2020-10-17"),attendance:'p',userid:'6654c0b6fce2851d43426527'},
+  {date: ISODate("2020-10-18"),attendance:'p',userid:'6654c0b6fce2851d43426527'},
+  {date: ISODate("2020-10-24"),attendance:'p',userid:'6654c0b6fce2851d43426527'},
+  {date: ISODate("2020-10-25"),attendance:'p',userid:'6654c0b6fce2851d43426527'},
+  {date: ISODate("2020-10-31"),attendance:'a',userid:'6654c0b6fce2851d43426527'},
+  {date: ISODate("2020-10-03"),attendance:'p',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-04"),attendance:'p',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-10"),attendance:'p',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-11"),attendance:'p',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-17"),attendance:'p',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-18"),attendance:'p',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-24"),attendance:'p',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-25"),attendance:'p',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-31"),attendance:'p',userid:'6654c0b6fce2851d43426528'}
+]);
+     
+
+topics
+
+db.topics.insertMany([
+  
+  {date: ISODate("2020-09-05"),topicname:'python'},
+  {date: ISODate("2020-09-06"),topicname:'sql'},
+  {date: ISODate("2020-09-12"),topicname:'excel'},
+  {date: ISODate("2020-09-13"),topicname:'macro'},
+  {date: ISODate("2020-09-19"),topicname:'vba'},
+  {date: ISODate("2020-09-20"),topicname:'powerbi'},
+  {date: ISODate("2020-09-26"),topicname:'tableau'},
+  {date: ISODate("2020-09-27"),topicname:'jira'}
+]);
+
+db.topics.insertMany([
+  {date: ISODate("2020-10-03"),topicname:'git and VScode installation'},
+  {date: ISODate("2020-10-04"),topicname:'basic of Javascript'},
+  {date: ISODate("2020-10-10"),topicname:'HTML'},
+  {date: ISODate("2020-10-11"),topicname:'CSS'},
+  {date: ISODate("2020-10-17"),topicname:'Boostrap'},
+  {date: ISODate("2020-10-18"),topicname:'React'},
+  {date: ISODate("2020-10-24"),topicname:'Mongodb'},
+  {date: ISODate("2020-10-25"),topicname:'Nodejs'},
+  {date: ISODate("2020-10-31"),topicname:'Expressjs'}
+]);
+
+tasks
+
+db.tasks.insertMany([
+  
+  {date: ISODate("2020-09-05"),taskname:'python',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-09-06"),taskname:'sql',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-09-12"),taskname:'excel',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-09-13"),taskname:'macro',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-09-19"),taskname:'vba',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-09-20"),taskname:'powerbi',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-09-26"),taskname:'tableau',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-09-27"),taskname:'jira',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'}
+]);
+
+
+db.tasks.insertMany([
+  {date: ISODate("2020-10-03"),taskname:'Javascript',taskstatus:'inprogress',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-04"),taskname:'HTML',taskstatus:'pending',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-03"),taskname:'Javascript',taskstatus:'inprogress',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-04"),taskname:'HTML',taskstatus:'pending',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-10"),taskname:'HTML',taskstatus:'inprogress',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-11"),taskname:'CSS',taskstatus:'pending',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-17"),taskname:'Boostrap',taskstatus:'completed',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-24"),taskname:'Mongodb',taskstatus:'inprogress',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-31"),taskname:'Expressjs',taskstatus:'pending',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-18"),taskname:'React',taskstatus:'inprogress',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-25"),taskname:'Nodejs',taskstatus:'pending',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-10"),taskname:'HTML',taskstatus:'pending',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-11"),taskname:'CSS',taskstatus:'pending',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-31"),taskname:'Expressjs',taskstatus:'inprogress',userid:'6654c0b6fce2851d43426527'},
+  {date: ISODate("2020-10-03"),taskname:'Javascript',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-04"),taskname:'Javascript',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-10"),taskname:'HTML',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-11"),taskname:'CSS',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-17"),taskname:'Boostrap',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-18"),taskname:'React',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-24"),taskname:'Mongodb',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-25"),taskname:'Nodejs',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'},
+  {date: ISODate("2020-10-31"),taskname:'Expressjs',taskstatus:'completed',userid:'6654c0b6fce2851d43426528'}
+]);
+
+company_drives
+
+db.company_drives.insertMany([
+  {date: ISODate("2020-10-03"),companyname:'winterfell',selectedstatus:'selected',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-04"),companyname:'vale_of_arryn',selectedstatus:'inpipeline',userid:'6654c0b6fce2851d43426521'},
+  {date: ISODate("2020-10-03"),companyname:'winterfell',selectedstatus:'selected',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-04"),companyname:'vale_of_arryn',selectedstatus:'selected',userid:'6654c0b6fce2851d43426522'},
+  {date: ISODate("2020-10-10"),companyname:'river_land',selectedstatus:'selected',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-11"),companyname:'kings_landing',selectedstatus:'rejected',userid:'6654c0b6fce2851d43426523'},
+  {date: ISODate("2020-10-17"),companyname:'winterfell',selectedstatus:'rejected',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-24"),companyname:'the_wall',selectedstatus:'selected',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-31"),companyname:'braavos',selectedstatus:'selected',userid:'6654c0b6fce2851d43426524'},
+  {date: ISODate("2020-10-18"),companyname:'winterfell',selectedstatus:'selected',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-25"),companyname:'the_wall',selectedstatus:'selected',userid:'6654c0b6fce2851d43426525'},
+  {date: ISODate("2020-10-10"),companyname:'river_land',selectedstatus:'rejected',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-11"),companyname:'kings_landing',selectedstatus:'selected',userid:'6654c0b6fce2851d43426526'},
+  {date: ISODate("2020-10-31"),companyname:'braavos',selectedstatus:'selected',userid:'6654c0b6fce2851d43426527'},
+]);
+
+
+mentors
+db.mentors.insertMany
+([
+{mentorname:'tyrion_lannister',mentee_count:98},
+{mentorname:'samwell_tarly',mentee_count:60},
+{mentorname:'cersei_lannister',mentee_count:13},
+{mentorname:'joffrey_baratheon',mentee_count:10},
+{mentorname:'Tywin_lannister',mentee_count:5}
+]);
+
+
+
+

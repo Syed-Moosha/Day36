@@ -1,0 +1,135 @@
+Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+
+querry:-
+
+const absent = db.attendance.find({
+  date: {
+    $gte: ISODate("2020-10-15"),
+    $lt: ISODate("2020-10-31")
+  },
+attendance: { $ne: 'p' }
+}).toArray();
+
+const tasksnotcompleted = db.tasks.find({
+  date: {
+    $gte: ISODate("2020-10-15"),
+    $lt: ISODate("2020-10-31")
+  },
+taskstatus: { $ne: 'completed' }
+}).toArray();
+
+print("users who are absent between 15 oct-2020 and 31-oct-2020 :", absent);
+print("users task is not submitted between 15 oct-2020 and 31-oct-2020:", tasksnotcompleted);
+
+
+output:-
+
+users who are absent between 15 oct-2020 and 31-oct-2020 :
+
+[
+  {
+    _id: ObjectId('6655f2e097e34b4db6f6e4e2'),
+    date: 2020-10-17T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6655f2e097e34b4db6f6e4e4'),
+    date: 2020-10-24T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6655f2e097e34b4db6f6e4ec'),
+    date: 2020-10-18T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6655f2e097e34b4db6f6e4ee'),
+    date: 2020-10-25T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656158397e34b4db6f6e556'),
+    date: 2020-10-17T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656158397e34b4db6f6e558'),
+    date: 2020-10-24T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656158397e34b4db6f6e560'),
+    date: 2020-10-18T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656158397e34b4db6f6e562'),
+    date: 2020-10-25T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656166997e34b4db6f6e59e'),
+    date: 2020-10-17T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656166997e34b4db6f6e5a0'),
+    date: 2020-10-24T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656166997e34b4db6f6e5a8'),
+    date: 2020-10-18T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656166997e34b4db6f6e5aa'),
+    date: 2020-10-25T00:00:00.000Z,
+    attendance: 'a',
+    userid: '6654c0b6fce2851d43426525'
+  }
+]
+
+
+users task is not submitted between 15 oct-2020 and 31-oct-2020:
+
+[
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5ce'),
+    date: 2020-10-24T00:00:00.000Z,
+    taskname: 'Mongodb',
+    taskstatus: 'inprogress',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d0'),
+    date: 2020-10-18T00:00:00.000Z,
+    taskname: 'React',
+    taskstatus: 'inprogress',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d1'),
+    date: 2020-10-25T00:00:00.000Z,
+    taskname: 'Nodejs',
+    taskstatus: 'pending',
+    userid: '6654c0b6fce2851d43426525'
+  }
+]
+
+
+
+
+
+

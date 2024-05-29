@@ -1,0 +1,59 @@
+2.Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+
+querry:-
+
+db.company_drives.find({
+  date: {
+    $gte: ISODate("2020-10-15"),
+    $lte: ISODate("2020-10-31")
+  }
+}).toArray();
+
+output:-
+
+[
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51a'),
+    date: 2020-10-17T00:00:00.000Z,
+    companyname: 'winterfell',
+    selectedstatus: 'rejected',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51b'),
+    date: 2020-10-24T00:00:00.000Z,
+    companyname: 'the_wall',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51c'),
+    date: 2020-10-31T00:00:00.000Z,
+    companyname: 'braavos',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51d'),
+    date: 2020-10-18T00:00:00.000Z,
+    companyname: 'winterfell',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e51e'),
+    date: 2020-10-25T00:00:00.000Z,
+    companyname: 'the_wall',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656048297e34b4db6f6e521'),
+    date: 2020-10-31T00:00:00.000Z,
+    companyname: 'braavos',
+    selectedstatus: 'selected',
+    userid: '6654c0b6fce2851d43426527'
+  }
+]
+
+

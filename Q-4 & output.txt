@@ -1,0 +1,58 @@
+4.Find the number of problems solved by the user in codekata
+
+querry
+
+db.codekata.find().toArray();
+
+output:-
+
+[
+  {
+    _id: ObjectId('66561b7097e34b4db6f6e5de'),
+    student_name: 'nedstark',
+    problesolved: '57',
+    userid: '6654c0b6fce2851d43426521'
+  },
+  {
+    _id: ObjectId('66561b7097e34b4db6f6e5df'),
+    student_name: 'catelynstark',
+    problesolved: '53',
+    userid: '6654c0b6fce2851d43426522'
+  },
+  {
+    _id: ObjectId('66561b7097e34b4db6f6e5e0'),
+    student_name: 'robstark',
+    problesolved: '45',
+    userid: '6654c0b6fce2851d43426523'
+  },
+  {
+    _id: ObjectId('66561b7097e34b4db6f6e5e1'),
+    student_name: 'jhonsnow',
+    problesolved: '54',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('66561b7097e34b4db6f6e5e2'),
+    student_name: 'brandonstark',
+    problesolved: '50',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('66561b7097e34b4db6f6e5e3'),
+    student_name: 'sansastark',
+    problesolved: '34',
+    userid: '6654c0b6fce2851d43426526'
+  },
+  {
+    _id: ObjectId('66561b7097e34b4db6f6e5e4'),
+    student_name: 'aryastark',
+    problesolved: '65',
+    userid: '6654c0b6fce2851d43426527'
+  },
+  {
+    _id: ObjectId('66561b7097e34b4db6f6e5e5'),
+    student_name: 'rickonstark',
+    problesolved: '33',
+    userid: '6654c0b6fce2851d43426528'
+  }
+]

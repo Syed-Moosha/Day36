@@ -1,0 +1,21 @@
+5.Find all the mentors with who has the mentee's count more than 15
+
+querry:-
+
+db.mentors.find({mentee_count:{$gt:15}}).toArray();
+
+output:-
+
+[
+  {
+    _id: ObjectId('66562b1797e34b4db6f6e5f8'),
+    mentorname: 'tyrion_lannister',
+    mentee_count: 98
+  },
+  {
+    _id: ObjectId('66562b1797e34b4db6f6e5f9'),
+    mentorname: 'samwell_tarly',
+    mentee_count: 60
+  }
+]
+

@@ -1,0 +1,238 @@
+
+1.Find all the topics and tasks which are thought in the month of October
+
+querry:-
+
+const topicsInOctober = db.topics.find({
+  date: {
+    $gte: ISODate("2020-10-01T00:00:00Z"),
+    $lt: ISODate("2020-11-01T00:00:00Z")
+  }
+}).toArray();
+
+const tasksInOctober = db.tasks.find({
+  date: {
+    $gte: ISODate("2020-10-01T00:00:00Z"),
+    $lt: ISODate("2020-11-01T00:00:00Z")
+  }
+}).toArray();
+
+print("Topics in October:", topicsInOctober);
+print("Tasks in October:", tasksInOctober);
+
+
+output:-
+
+Topics in October:
+[
+  {
+    _id: ObjectId('6655f5d897e34b4db6f6e50b'),
+    date: 2020-10-03T00:00:00.000Z,
+    topicname: 'git and VScode installation'
+  },
+  {
+    _id: ObjectId('6655f5d897e34b4db6f6e50c'),
+    date: 2020-10-04T00:00:00.000Z,
+    topicname: 'basic of Javascript'
+  },
+  {
+    _id: ObjectId('6655f5d897e34b4db6f6e50d'),
+    date: 2020-10-10T00:00:00.000Z,
+    topicname: 'HTML'
+  },
+  {
+    _id: ObjectId('6655f5d897e34b4db6f6e50e'),
+    date: 2020-10-11T00:00:00.000Z,
+    topicname: 'CSS'
+  },
+  {
+    _id: ObjectId('6655f5d897e34b4db6f6e50f'),
+    date: 2020-10-17T00:00:00.000Z,
+    topicname: 'Boostrap'
+  },
+  {
+    _id: ObjectId('6655f5d897e34b4db6f6e510'),
+    date: 2020-10-18T00:00:00.000Z,
+    topicname: 'React'
+  },
+  {
+    _id: ObjectId('6655f5d897e34b4db6f6e511'),
+    date: 2020-10-24T00:00:00.000Z,
+    topicname: 'Mongodb'
+  },
+  {
+    _id: ObjectId('6655f5d897e34b4db6f6e512'),
+    date: 2020-10-25T00:00:00.000Z,
+    topicname: 'Nodejs'
+  },
+  {
+    _id: ObjectId('6655f5d897e34b4db6f6e513'),
+    date: 2020-10-31T00:00:00.000Z,
+    topicname: 'Expressjs'
+  }
+]
+
+Tasks in October:
+[
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5c7'),
+    date: 2020-10-03T00:00:00.000Z,
+    taskname: 'Javascript',
+    taskstatus: 'inprogress',
+    userid: '6654c0b6fce2851d43426521'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5c8'),
+    date: 2020-10-04T00:00:00.000Z,
+    taskname: 'HTML',
+    taskstatus: 'pending',
+    userid: '6654c0b6fce2851d43426521'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5c9'),
+    date: 2020-10-03T00:00:00.000Z,
+    taskname: 'Javascript',
+    taskstatus: 'inprogress',
+    userid: '6654c0b6fce2851d43426522'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5ca'),
+    date: 2020-10-04T00:00:00.000Z,
+    taskname: 'HTML',
+    taskstatus: 'pending',
+    userid: '6654c0b6fce2851d43426522'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5cb'),
+    date: 2020-10-10T00:00:00.000Z,
+    taskname: 'HTML',
+    taskstatus: 'inprogress',
+    userid: '6654c0b6fce2851d43426523'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5cc'),
+    date: 2020-10-11T00:00:00.000Z,
+    taskname: 'CSS',
+    taskstatus: 'pending',
+    userid: '6654c0b6fce2851d43426523'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5cd'),
+    date: 2020-10-17T00:00:00.000Z,
+    taskname: 'Boostrap',
+    taskstatus: 'completed',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5ce'),
+    date: 2020-10-24T00:00:00.000Z,
+    taskname: 'Mongodb',
+    taskstatus: 'inprogress',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5cf'),
+    date: 2020-10-31T00:00:00.000Z,
+    taskname: 'Expressjs',
+    taskstatus: 'pending',
+    userid: '6654c0b6fce2851d43426524'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d0'),
+    date: 2020-10-18T00:00:00.000Z,
+    taskname: 'React',
+    taskstatus: 'inprogress',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d1'),
+    date: 2020-10-25T00:00:00.000Z,
+    taskname: 'Nodejs',
+    taskstatus: 'pending',
+    userid: '6654c0b6fce2851d43426525'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d2'),
+    date: 2020-10-10T00:00:00.000Z,
+    taskname: 'HTML',
+    taskstatus: 'pending',
+    userid: '6654c0b6fce2851d43426526'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d3'),
+    date: 2020-10-11T00:00:00.000Z,
+    taskname: 'CSS',
+    taskstatus: 'pending',
+    userid: '6654c0b6fce2851d43426526'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d4'),
+    date: 2020-10-31T00:00:00.000Z,
+    taskname: 'Expressjs',
+    taskstatus: 'inprogress',
+    userid: '6654c0b6fce2851d43426527'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d5'),
+    date: 2020-10-03T00:00:00.000Z,
+    taskname: 'Javascript',
+    taskstatus: 'completed',
+    userid: '6654c0b6fce2851d43426528'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d6'),
+    date: 2020-10-04T00:00:00.000Z,
+    taskname: 'Javascript',
+    taskstatus: 'completed',
+    userid: '6654c0b6fce2851d43426528'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d7'),
+    date: 2020-10-10T00:00:00.000Z,
+    taskname: 'HTML',
+    taskstatus: 'completed',
+    userid: '6654c0b6fce2851d43426528'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d8'),
+    date: 2020-10-11T00:00:00.000Z,
+    taskname: 'CSS',
+    taskstatus: 'completed',
+    userid: '6654c0b6fce2851d43426528'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5d9'),
+    date: 2020-10-17T00:00:00.000Z,
+    taskname: 'Boostrap',
+    taskstatus: 'completed',
+    userid: '6654c0b6fce2851d43426528'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5da'),
+    date: 2020-10-18T00:00:00.000Z,
+    taskname: 'React',
+    taskstatus: 'completed',
+    userid: '6654c0b6fce2851d43426528'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5db'),
+    date: 2020-10-24T00:00:00.000Z,
+    taskname: 'Mongodb',
+    taskstatus: 'completed',
+    userid: '6654c0b6fce2851d43426528'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5dc'),
+    date: 2020-10-25T00:00:00.000Z,
+    taskname: 'Nodejs',
+    taskstatus: 'completed',
+    userid: '6654c0b6fce2851d43426528'
+  },
+  {
+    _id: ObjectId('6656169c97e34b4db6f6e5dd'),
+    date: 2020-10-31T00:00:00.000Z,
+    taskname: 'Expressjs',
+    taskstatus: 'completed',
+    userid: '6654c0b6fce2851d43426528'
+  }
+]
